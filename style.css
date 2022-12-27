@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --darkCyan: hsl(179, 100%, 13%);
+    --title: 'Big Shoulders Display', cursive;
+    --text: 'Lexend Deca', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+h1 {
+    display: none;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 20rem;
+    max-width: 60em;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    
+    border: 1px solid black;
+}
+.card {
+    padding-block: 3rem;
+    padding-inline: 4rem;
+    color: rgba(255, 255, 255, 0.941);  
+}
+.card--1 {
+    border-radius: 10px 10px 0 0;
+    background-color: var(--orange);
+}
+.card--2 {
+    background-color: var(--cyan);
+}
+.card--3 {
+    background-color: var(--darkCyan);
+    border-radius: 0 0 10px 10px;
+}
+.card__title {
+    font-family: var(--title);
+    font-size: 2rem;
+    padding-block: 1.7rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+.card__text {
+    font-family: var(--text);
+    line-height: 1.9rem;
+    padding-bottom: 2.5rem;
+}
+.card__button {
+    text-decoration: none;
+    background-color: white;
+    font-family: var(--text);
+    padding: 1rem;
+    padding-inline: 2rem;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    margin-bottom: 7rem;
+}
+.card__button--1 {
+    color: var(--orange);
+}
+.card__button--2 {
+    color: var(--cyan);
+}
+.card__button--3 {
+    color: var(--darkCyan);
+}
+/* @media screen and (min-width: 40em) {
+    .container {
+        min-height: 100vh;
+        
+        width: 70%;
+       
+        
+    }
+    .card {
+        min-height: 400px;
+    }
+    .card--1 {
+        border-radius: 10px 0 0 10px;
+        
+        flex: 1 1 18rem
+    }
+    .card--2 {
+        flex: 1 1 18rem
+    }
+    .card--3 {
+        border-radius: 0 10px 10px 0;
+        flex: 1 1 18rem
+    }
+    .card__button {
+        /* white-space: nowrap; */
+    }
+} */

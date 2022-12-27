@@ -1,0 +1,7 @@
+.col-container {
+    display: flex; /* this is all you need to get an equal height grid */
+  }
+  .col {
+    padding: 16px;
+    width: 25%;
+  }
