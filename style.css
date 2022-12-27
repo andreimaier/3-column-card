@@ -21,23 +21,34 @@ body {
     justify-content: center;
 }
 
+.play {
+    display: block;
+    width: 100%;
+}
+
 .container {
-    margin-top: 20rem;
-    max-width: 60em;
     width: 90%;
-    margin: 0 auto;
+    margin: 2rem auto;
     display: flex;
-    flex-direction: row;
-    
-    border: 1px solid black;
+    flex-wrap: wrap;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 .card {
+    min-height: 32rem;
+    flex: 1 1 18rem;
+    display: flex; 
+    flex-direction: column;
+    gap: 0.5rem;
     padding-block: 3rem;
     padding-inline: 4rem;
-    color: rgba(255, 255, 255, 0.941);  
+    color: rgba(255, 255, 255, 0.941);
+    
+}
+.card__car {
+    max-width: 4rem;
 }
 .card--1 {
-    border-radius: 10px 10px 0 0;
     background-color: var(--orange);
 }
 .card--2 {
@@ -45,7 +56,6 @@ body {
 }
 .card--3 {
     background-color: var(--darkCyan);
-    border-radius: 0 0 10px 10px;
 }
 .card__title {
     font-family: var(--title);
@@ -55,53 +65,39 @@ body {
     font-size: 2.5rem;
 }
 .card__text {
+    font-size: 16px;
     font-family: var(--text);
-    line-height: 1.9rem;
-    padding-bottom: 2.5rem;
+    line-height: 1.6rem;
+    padding-bottom: 1rem;
 }
 .card__button {
+    margin-top: auto;
     text-decoration: none;
     background-color: white;
     font-family: var(--text);
-    padding: 1rem;
+    padding: 0.6rem;
     padding-inline: 2rem;
+    border: 2px solid transparent;
     border-radius: 30px;
     font-size: 1.1rem;
-    margin-bottom: 7rem;
+    color: black;
+    mix-blend-mode: screen;
+    width: fit-content;
+    transition: 200ms ease-in-out;
 }
-.card__button--1 {
-    color: var(--orange);
+.card__button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
 }
-.card__button--2 {
-    color: var(--cyan);
-}
-.card__button--3 {
-    color: var(--darkCyan);
-}
-/* @media screen and (min-width: 40em) {
+
+@media screen and (min-width: 40em) {
     .container {
-        min-height: 100vh;
-        
-        width: 70%;
-       
+        width: 65%;
         
     }
     .card {
-        min-height: 400px;
+        padding: 3.3rem;
     }
-    .card--1 {
-        border-radius: 10px 0 0 10px;
-        
-        flex: 1 1 18rem
-    }
-    .card--2 {
-        flex: 1 1 18rem
-    }
-    .card--3 {
-        border-radius: 0 10px 10px 0;
-        flex: 1 1 18rem
-    }
-    .card__button {
-        /* white-space: nowrap; */
-    }
-} */
+}
