@@ -20,12 +20,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
-.play {
-    display: block;
-    width: 100%;
-}
-
 .container {
     width: 90%;
     margin: 2rem auto;
@@ -42,8 +36,7 @@ body {
     gap: 0.5rem;
     padding-block: 3rem;
     padding-inline: 4rem;
-    color: rgba(255, 255, 255, 0.941);
-    
+    color: rgba(255, 255, 255, 0.941);  
 }
 .card__car {
     max-width: 4rem;
@@ -94,8 +87,7 @@ body {
 
 @media screen and (min-width: 40em) {
     .container {
-        width: 65%;
-        
+        width: 65%; 
     }
     .card {
         padding: 3.3rem;
