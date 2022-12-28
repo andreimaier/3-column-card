@@ -34,11 +34,13 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### What I learned
 
+- to upgrade my CSS reset plate
 - using CSS variables for colors and fonts
 - hiding the main heading of the page using `position: absolute`, `overflow: hidden` and _negative margin_ to get it out of the viewport
 - positioning the card vertically using `display: flex` on the `body`
 - `margin-top: auto` will make the last element in a container float to the bottom of its parent (which in turn helps with **responsiveness**)
 - `mix-blend-mode: screen` combined with `color: black` is a nifty way to set `color` to match the background. _used it to set the color of my buttons' text_
+- which images need `alt` text and which should use `aria-hidden: true` instead
 - used BEM naming convention for the first time and found it useful
 - used `flex` property for the first time
 
