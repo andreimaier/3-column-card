@@ -19,7 +19,7 @@ This will align your `div.center` vertically.
 
 - add an `alt` description to your `img.qr-code`
 
-For **More info** on when you should use `alt` attributes _and when not to_, check [THIS](https://www.w3.org/WAI/tutorials/images/)
+For **More info** on when you should use `alt` attributes _and when not to_, check [THIS 📚](https://www.w3.org/WAI/tutorials/images/)
 
 - try to use **Semantic HTML** as much as possible
   - for example by replacing your `div.center` with the `main` element
