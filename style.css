@@ -1,8 +1,31 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font: inherit;
 }
+html {
+    color-scheme: dark light;
+}
+html, body {
+    height: 100%;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+p {
+    line-height: 1.5;
+}
+img, video, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
 :root {
     --orange: hsl(31, 77%, 52%);
     --cyan: hsl(184, 100%, 22%);
@@ -28,7 +51,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--veryLightGrey)
+    background-color: var(--veryLightGrey);
+    font-family: var(--text);
 }
 .container {
     width: 90%;
@@ -51,13 +75,13 @@ body {
 .card__car {
     max-width: 4rem;
 }
-.card--1 {
+.card:first-child {
     background-color: var(--orange);
 }
-.card--2 {
+.card:nth-child(2) {
     background-color: var(--cyan);
 }
-.card--3 {
+.card:last-child {
     background-color: var(--darkCyan);
 }
 .card__title {
@@ -72,8 +96,7 @@ body {
     padding-bottom: 1rem;
     font-size: 16px;
     color: var(--transparentWhite);
-    font-family: var(--text);
-    line-height: 1.6rem;
+    line-height: 1.6;
 }
 .card__button {
     margin-top: auto;
@@ -84,7 +107,6 @@ body {
     border: 2px solid transparent;
     border-radius: 30px;
     font-size: 1.1rem;
-    font-family: var(--text);
     background-color: var(--veryLightGrey);
     color: black;
     mix-blend-mode: screen;
